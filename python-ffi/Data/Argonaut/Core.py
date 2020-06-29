@@ -11,7 +11,7 @@ stringify = json.dumps
 
 
 def isArray(a):
-    return type(a) == list
+    return (type(a) == list) or (type(a) == tuple)
 
 
 def _caseJson(isNone, isBool, isNum, isStr, isArr, isObj, j):
@@ -27,6 +27,7 @@ def _caseJson(isNone, isBool, isNum, isStr, isArr, isObj, j):
         return isArr(j)
     else:
         return isObj(j)
+
 
 def _compare(EQ, GT, LT, a, b):
     if a == None:
