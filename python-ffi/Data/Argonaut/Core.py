@@ -5,7 +5,7 @@ fromNumber = lambda x: x
 fromString = lambda x: x
 fromArray = lambda x: x
 fromObject = lambda x: x
-jsonNone = None
+jsonNull = None
 
 stringify = json.dumps
 
